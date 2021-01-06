@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-controller="appController">
+    <p>Please Input you value here!</p>
+    <input type="text" ng-model="title">
+    <h1>{{title}}</h1>
+    <!-- Test -->
+    <div>oldVal: {{oldVal}}</div>
+    <div>newVal: {{newVal}}</div>
+    
+    <script src="bundle.js"></script>
+</body>
+</html>

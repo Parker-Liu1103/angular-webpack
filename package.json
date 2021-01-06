@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack serve --history-api-fallback --inline --progress --watch",
+    "start": "npm run server"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,12 @@
   "homepage": "https://github.com/Parker-Liu1103/angular-webpack#readme",
   "dependencies": {
     "angular": "^1.8.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.1",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
   }
 }
