@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack serve --history-api-fallback --inline --progress --watch",
-    "start": "npm run start",
+    "start": "npm run server",
     "lint": "eslint app --fix",
     "lint:create": "eslint --init"
   },
