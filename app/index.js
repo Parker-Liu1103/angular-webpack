@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-const mainApp =
+let mainApp =
     angular.module('mainApp', []);
 mainApp.controller('appController', ['$scope', ($scope) => {
   $scope.title = '';
