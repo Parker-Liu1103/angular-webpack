@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack serve --history-api-fallback --inline --progress --watch",
-    "start": "npm run server"
+    "start": "npm run start",
+    "lint": "eslint app --fix",
+    "lint:create": "eslint --init"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
     "angular": "^1.8.2"
   },
   "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
     "html-webpack-plugin": "^4.5.1",
     "rimraf": "^3.0.2",
     "webpack": "^5.11.1",

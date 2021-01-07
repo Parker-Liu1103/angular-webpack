@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-const webpack = require('webpack'); 
+// const webpack = require('webpack'); 
 const path = require('path');
 
 module.exports = {
