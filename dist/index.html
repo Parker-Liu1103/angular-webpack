@@ -1,1 +1,26 @@
-<!doctype html><html lang="en" ng-app="mainApp"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title></head><body ng-controller="appController"><p>Please Input you value here!</p><input ng-model="title"><h1>{{title}}</h1><div>oldVal: {{oldVal}}</div><div>newVal: {{newVal}}</div><script src="bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules//angular-route/angular-route.js"></script>
+    <title>Document</title>
+    <base href="/">
+</head>
+
+<body >
+    <div>
+        <a href="/Angular">Go to angular</a>
+        <a href="/Node">Go to Node</a>
+    
+    </div>
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
+      
+    <!-- <script src="../dist/bundle.js"></script> -->
+<script src="module.bundle.js"></script><script src="configuration.bundle.js"></script><script src="controller.bundle.js"></script></body>
+
+</html>

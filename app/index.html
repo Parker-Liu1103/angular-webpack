@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="mainApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules//angular-route/angular-route.js"></script>
     <title>Document</title>
+    <!-- <base href="/"> -->
 </head>
-<body ng-controller="appController">
-    <p>Please Input you value here!</p>
-    <input type="text" ng-model="title">
-    <h1>{{title}}</h1>
-    <!-- Test -->
-    <div>oldVal: {{oldVal}}</div>
-    <div>newVal: {{newVal}}</div>
-    
-    <!-- <script src="../dist/bundle.js"></script> -->
+
+<body >
+    <div>
+        <a href="/Angular">Go to angular</a>
+        <a href="/Node">Go to Node</a>
+        <a href="/">Go to Home</a>
+    </div>
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
 </body>
+
 </html>
